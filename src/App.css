@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
+  display:flex;
+  align-items:center;
+  justify-content:center;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+:root{
+  --white:#FFF;
+  --bg:#313552;
+  --grey:#CCC;
+  ---success-bg:#6bcb77;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wraper{
+  width:100%;
+  max-width:500px;
+  padding:30px 30px;
+  background: var(--white);
+  border-radius:20px;
+  box-shadow:0 4px 4px rgb(0,0,0,0.2);
+}
+.wraper .content .Logo img{
+  width:100%;
+  max-width:120px;
+  margin:0 auto;
+  padding-left: 182px;
+}
+.wraper .content .cl{
+  margin-top:10px;
+  text-align:center;
+}
+.wraper .content .cl span{
+  font-size:1.4em;
+  font-weight:500px;
+}
+.wraper .content .form{
+  margin-top:30px;
+}
+.wraper .content .form form input{
+  width:100%;
+  padding:20px 40px;
+  border:1px solid var(--grey);
+  outline:none;
+  border-radius:5px;
+  box-sizing:border-box;
+  margin-bottom:30px;
+}
+.warper .content .form form input:focus{
+  border-color:var(--bg);
+}
+.wraper .content .form form button{
+  background:var(--bg);
+  color:var(--white);
+  font-weight:500;
+  border:none;
+  font-size:1em;
+  padding:15px 40px;
+  border-radius:5px;
+  cursor:pointer;
+}
+.wraper .content .form form .eInput .icon{
+  position:absolute;
+  top:20px;
+  left:10px;
+  color:var(--grey);
+}
+.wraper .content .form form .eInput{
+  position:relative;
+}
+.status{
+  padding: 20px;
+  color: #721c72;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  margin:10px 0 10px;
+  border-radius:5px;
+  /*display:none;*/
+  text-align:center;
 }
