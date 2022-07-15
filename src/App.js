@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
 import {useState} from 'react'
+import Home from './componets/Home'
 function App() {
   const[hide,setHide]=useState(true)
   const[show,setShow]=useState(true)
@@ -123,6 +124,7 @@ function App() {
 
   return (
     <div className="App">
+      <Home/>
       <div className="wraper">
         <div className="content">
           <div className="Logo">
