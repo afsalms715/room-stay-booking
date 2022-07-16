@@ -6,6 +6,7 @@
     border-radius:20px;
     box-shadow:0 4px 4px rgba(208, 38, 75, 0.2);
     overflow:hidden;
+    margin:1em;
     display:none;  
 }
 .container .content .text{
@@ -44,4 +45,10 @@
     padding:15px 40px;
     border-radius:5px;
     cursor:pointer;
+}
+.container.show{
+    display: block;
+}
+.container.hide{
+    display: none;
 }

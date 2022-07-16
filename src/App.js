@@ -11,7 +11,6 @@ function App() {
   const[show,setShow]=useState(true)
 
   const validationForm=(event)=>{
-    event.preventDefult();
     const input1=document.getElementById('input1');
     const input2=document.getElementById('input2');
     const status=document.querySelector('.status');
@@ -59,7 +58,7 @@ function App() {
           input2.classList.add("valid");
         }
       }
-      if(input1.classList.contains('valide') && input2.contains('valid')){
+      if(input1.classList.contains('valid') && input2.classList.contains('valid')){
         console.log('submitted');
         setTimeout(()=>{
           let container =document.querySelector('.container');
@@ -68,12 +67,13 @@ function App() {
           setShow(!show+container.classList.add("show"));
         },1000);  
       }
+      return false;
     } 
 
   const handleMail=()=>{
     const input1=document.getElementById('input1');
     const status=document.querySelector('.status');
-    let validation="please fill the above fields";
+    let validation="please fill the  fields";
     let emailvalidation="email validation error must include @ and .com Try again";
     if(!input1.value){
       console.warn("validation error");
@@ -131,7 +131,7 @@ function App() {
             <img src={roomstaylogo} alt="" />
           </div>
           <div className="cl">
-            <span>Become an member of HomeStay today</span>
+            <span>Become an member of QatarHomeStay today</span>
           </div>
           <div className="form">
             <div className="status"> 

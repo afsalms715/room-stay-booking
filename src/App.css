@@ -79,3 +79,6 @@
 .status.active{
   display:block;
 }
+.wraper.hide{
+  display: none;
+}
