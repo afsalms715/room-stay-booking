@@ -52,3 +52,10 @@
 .container.hide{
     display: none;
 }
+
+.box.show{
+    display: block;
+}
+.box.hide{
+    display: none;
+}
